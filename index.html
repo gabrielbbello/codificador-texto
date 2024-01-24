@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./js/index.js" type="module" defer></script>
+  <script src="https://kit.fontawesome.com/998c60ef77.js" defer></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Codificador e decodificador de texto</title>
+</head>
+<body>
+
+
+
+  <main>
+
+    <div class="img-dark">
+      <img class="img-logo" src="./assets/logo.svg" alt="">
+      <div class="header-nightmode">
+        <p>Clica em mim :)</p>
+        <input type="checkbox" class="checkbox" id="dark-toggle">
+        <label class="label" for="dark-toggle">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>  
+        </label>
+      </div>
+
+      <div class="rules">
+        <label for="rule-a">Digite a criptografia para letra "a"</label>
+        <textarea id="rule-a" placeholder="criptografia para letra a">ai</textarea>
+        <label for="rule-e">Digite a criptografia para letra "e"</label>
+        <textarea id="rule-e" placeholder="criptografia para letra e">enter</textarea>
+        <label for="rule-i">Digite a criptografia para letra "i"</label>
+        <textarea id="rule-i" placeholder="criptografia para letra i">imes</textarea>        
+        <label for="rule-o">Digite a criptografia para letra "o"</label>
+        <textarea id="rule-o" placeholder="criptografia para letra o">ober</textarea>
+        <label for="rule-u">Digite a criptografia para letra "u"</label>
+        <textarea id="rule-u" placeholder="criptografia para letra u">ufat</textarea>
+      </div>
+    </div>
+
+    <div class="containers">
+      
+      <section class="encrypt-container">
+        <textarea class="text-input" placeholder="Digite seu texto" required></textarea>
+
+        <div class="info-message">
+          <img class="info-icon" src="./assets/icon-info.svg" alt="">
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        
+        <div class="buttons-container">
+          <button class="encrypt-button">Criptografar</button>
+          <button class="decrypt-button">Descriptografar</button>
+        </div>
+      </section>
+  
+      <section class="decrypt-container">
+          
+          <div class="tohide-container">
+            <img class="yellow-toHide-image" src="./assets/image-toHide-yellow.svg" alt="">
+            <img class="dark-toHide-image hide" src="./assets/image-toHide-dark.svg" alt="">
+            <div class="decrypt-text">
+              <p class="initial-message">Nenhuma mensagem encontrada</p>
+              <p class="initial-instruction">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+          </div>
+
+          <div class="output-container">
+            <p class="output"></p>
+            <button class="copy-button hide">Copiar</button>
+          </div>
+
+      </section>
+    
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Gabriel Bello, 2024</p>
+    <div class="social-icons">
+      <a href="https://github.com/gabrielbbello" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/gabriel-brito-bello" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
